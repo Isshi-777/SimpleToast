@@ -62,7 +62,7 @@ namespace Isshi777
             try
             {
                 // キャンセル時の例外を抑制
-                await toast.Display(message, cts.Token).SuppressCancellationThrow();
+                await toast.Display(message, cts.Token);
             }
             finally
             {
